@@ -93,7 +93,7 @@
       user-select: none;
     }
 
-    #ver-video-btn, #confirm-submit, #more-info-btn {
+    #ver-video-btn, #more-info-btn {
       background-color: #e63946;
       color: white;
       border: none;
@@ -108,7 +108,7 @@
       transition: background-color 0.3s ease;
     }
 
-    #ver-video-btn:hover, #confirm-submit:hover, #more-info-btn:hover {
+    #ver-video-btn:hover, #more-info-btn:hover {
       background-color: #b32c36;
     }
 
@@ -206,18 +206,18 @@
     <span style="color:#e63946;">❌SIN VENTAS</span> NO HAY <span style="color:#e63946;">LIBERTAD</span>
   </div>
 
-  <button id="more-info-btn">QUIERO MÁS INFORMACIÓN</button>
+  <button id="more-info-btn">QUIERO HACER WOLFKETING</button>
 
   <div id="modal">
     <div id="modal-content">
       <span id="modal-close">&times;</span>
       <div id="modal-text">
-  <div style="font-size: 3rem; margin-bottom: 10px;">🐺</div>
-  ¿Tienes los resultados que siempre has querido o crees que naciste para algo más grande?<br/>
-  Bienvenido al <span class="highlight">Proyecto Lobo de Wall Street</span>
-</div>
+        <div style="font-size: 3rem; margin-bottom: 10px;">🐺</div>
+        ¿Tienes los resultados que siempre has querido o crees que naciste para algo más grande?<br/>
+        Bienvenido al <span class="highlight">Proyecto Lobo de Wall Street</span>
+      </div>
       <iframe src="https://form.typeform.com/to/hqvonWRi" allowfullscreen></iframe>
-      <button id="confirm-submit">He completado el formulario</button>
+      <!-- Botón eliminado -->
     </div>
   </div>
 
@@ -225,7 +225,6 @@
   const modal = document.getElementById('modal');
   const verVideoBtn = document.getElementById('ver-video-btn');
   const closeModalBtn = document.getElementById('modal-close');
-  const confirmBtn = document.getElementById('confirm-submit');
   const videoOverlay = document.getElementById('video-overlay');
   const video = document.getElementById('video');
   const moreInfoBtn = document.getElementById('more-info-btn');
@@ -246,12 +245,7 @@
     }
   });
 
-  confirmBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    videoOverlay.style.display = 'none';
-    verVideoBtn.style.display = 'none';
-    video.controls = true;
-  });
+  // Código del botón "He completado el formulario" eliminado
 
   moreInfoBtn.addEventListener('click', () => {
     window.location.href = 'mas-informacion.html';
