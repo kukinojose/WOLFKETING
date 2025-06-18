@@ -1,7 +1,7 @@
-/* Cargar la fuente local */
+/* Cargar la fuente local SF Collegiate Solid */
 @font-face {
-  font-family: 'RetroSlab';
-  src: url('../fonts/RetroSansSerifFF.ttf') format('truetype');
+  font-family: 'SF Collegiate Solid';
+  src: url('fonts/SF Collegiate Solid Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,9 +22,9 @@ body {
   padding: 40px 20px;
 }
 
-/* Título principal con la fuente Retro y mayúsculas */
+/* Título principal con la fuente SF Collegiate Solid y mayúsculas */
 h1 {
-  font-family: 'RetroSlab', sans-serif;
+  font-family: 'SF Collegiate Solid', sans-serif;
   text-transform: uppercase;
   color: #fff;
   text-align: center;

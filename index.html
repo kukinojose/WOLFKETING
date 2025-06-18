@@ -107,10 +107,23 @@
     color: #e63946;
     z-index: 1010;
   }
+  #modal-text {
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+  }
+  #modal-text .highlight {
+    color: #e63946;
+  }
   #modal iframe {
     flex-grow: 1;
     border: none;
-    border-radius: 12px 12px 0 0;
+    border-radius: 0 0 12px 12px;
   }
   /* Texto motivacional rojo/blanco con mayúsculas */
   #motivacional {
@@ -153,6 +166,9 @@
   <div id="modal">
     <div id="modal-content">
       <span id="modal-close">&times;</span>
+      <div id="modal-text">
+        SI QUIERES DEJAR DE VER VÍDEOS Y EMPEZAR A GENERAR <span class="highlight">DE 2.000 A 6.000 EUROS</span> AL MES DE FORMA TOTALMENTE ONLINE.
+      </div>
       <iframe src="https://form.typeform.com/to/hqvonWRi" allowfullscreen></iframe>
       <button id="confirm-submit">He completado el formulario</button>
     </div>
