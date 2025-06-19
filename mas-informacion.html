@@ -62,7 +62,7 @@
       text-align: center;
       cursor: pointer;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
     .btn-whatsapp {
       background-color: #25D366;
@@ -77,6 +77,24 @@
     }
     .btn-compra:hover {
       background-color: #c12736;
+      box-shadow: 0 8px 20px rgba(198, 39, 54, 0.7);
+    }
+    .btn-compra.destacado {
+      margin-top: 3rem;
+      padding: 18px 40px;
+      font-size: 1.3rem;
+      box-shadow: 0 6px 15px rgba(230, 57, 70, 0.7);
+      border-radius: 15px;
+      display: block;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    }
+    .btn-compra.destacado:hover {
+      background-color: #b0212d;
+      box-shadow: 0 12px 30px rgba(176, 33, 45, 0.9);
+      transform: scale(1.05);
     }
     .video-container {
       position: relative;
@@ -102,6 +120,11 @@
       }
       p, ul li {
         font-size: 1rem;
+      }
+      .btn-compra.destacado {
+        width: 100%;
+        padding: 16px;
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -133,6 +156,8 @@
     <li>Acceso de por vida</li>
   </ul>
 
+  <a href="https://www.drstudio.store/?sca_ref=8894735.G3s1h5ZkeRnAxoY" target="_blank" class="btn-compra destacado" rel="noopener noreferrer">EMPIEZA YA</a>
+
   <hr />
 
   <h2>🧠 ¿Para quién es esta formación?</h2>
@@ -150,8 +175,6 @@
   <p>Escríbeme para hacer WOLFKETING:</p>
 
   <a href="https://wa.me/34640038324?text=QUIERO%20HACER%20WOLFKETING" target="_blank" class="btn-whatsapp" rel="noopener noreferrer">Enviar mensaje por WhatsApp</a>
-
-  <a href="https://www.drstudio.store/?sca_ref=8894735.G3s1h5ZkeRnAxoY" target="_blank" class="btn-compra" rel="noopener noreferrer">EMPIEZA YA</a>
 
   <hr />
 
