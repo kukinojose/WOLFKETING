@@ -194,5 +194,26 @@
 
   <p>¿Eres uno de ellos?</p>
 
+  <script>
+    // Mapa de afiliados a su código Uppromote
+    const affiliates = {
+      "evamaria": "9023208.kOJAzKGAkA84Ssl",
+      "brian": "1234567.abcdefghijklmno", // pon aquí el código real de Brian
+      // añade más afiliados según necesites
+    };
+
+    // Detectar parámetro ?ref=algo
+    const urlParams = new URLSearchParams(window.location.search);
+    const ref = urlParams.get('ref');
+
+    if (ref && affiliates[ref]) {
+      // Seleccionar el botón "EMPIEZA YA"
+      const btn = document.querySelector('.btn-compra.destacado');
+      if (btn) {
+        // Cambiar el href para añadir el código de afiliado correspondiente
+        btn.href = `https://www.drstudio.store/?sca_ref=${affiliates[ref]}`;
+      }
+    }
+  </script>
 </body>
 </html>
