@@ -1,0 +1,48 @@
+import os
+import requests
+from bs4 import BeautifulSoup
+
+# URL base para buscar "negocios digitales", orientación vertical
+BASE_URL = 'https://pixabay.com/es/photos/search/negocios%20digitales/?orientation=vertical'
+
+# Carpeta donde se guardarán las imágenes
+SAVE_DIR = r'C:\Users\PC\Desktop\TT\web wolfketing\images'
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+def download_image(url, filename):
+    try:
+        response = requests.get(url, stream=True)
+        if response.status_code == 200:
+            with open(filename, 'wb') as f:
+                for chunk in response.iter_content(1024):
+                    f.write(chunk)
+            print(f'Descargada: {filename}')
+        else:
+            print(f'Error descargando {url}: Status {response.status_code}')
+    except Exception as e:
+        print(f'Error descargando {url}: {e}')
+
+def get_image_urls(page_url):
+    response = requests.get(page_url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    # Las imágenes están en etiquetas <img> con clase 'preview'
+    imgs = soup.find_all('img', {'class': 'preview'})
+    urls = []
+    for img in imgs:
+        src = img.get('src')
+        if src and src.startswith('https://cdn.pixabay.com'):
+            urls.append(src)
+    return urls
+
+def main():
+    # Solo la primera página por ahora
+    image_urls = get_image_urls(BASE_URL)
+    print(f'Encontradas {len(image_urls)} imágenes.')
+
+    for i, url in enumerate(image_urls):
+        ext = url.split('.')[-1].split('?')[0]  # extensión jpg/png
+        filename = os.path.join(SAVE_DIR, f'negocios_{i+1}.{ext}')
+        download_image(url, filename)
+
+if __name__ == '__main__':
+    main()

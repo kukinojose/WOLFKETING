@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "elegant-theorem-451308-i5",
+  "private_key_id": "98e1e20b2a79a7cecbf0548b271b586faaca6822",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7roDE/BjxlbQy\nJKHPWnV5TeeJmfMGDY/5YBtEDqgWMR01DqMmpl663m9mORBs2i9UKlC8EhubbGNx\nKh4px3OIvJoXJ8DRq3McaeR3Qwdx6Ba6kBJvR49ctWtQ4gm2dddIiwKpfYMZc4VV\nsl0XMLLE3xODxU+0y7N9N6B44XknWjCkhGH7V82sQcyzGPR8MwaamNmEX8fQ3cRT\nPiEEwmfX/0b06zbBVt3n/hQYsPgn29AyqQ/IlctyBlqvu5Ew4EWuefIPT8se1vXc\nFYD8FqedV75HP00hktA8eRSAQbkbgcyvwI2m5Yg75aKCWb0zqgKmUAUql33PlJL4\nMnqm3HmXAgMBAAECggEAETCtNV2sdd7dtQS17WVpAnCoQb+KtYXjJ1bY0yWkhPkq\nplluMslk6SjGe05uurRL8XbkE4B1Ft9D8cbcdxHVpd3gdI586Ay+wQjR7DqEzAy9\n8t3kp7HzkkJA+hTktC7xm6tf1bZb86YpEu2rU8caGKjLWMkRwTWHKHOX4c/aZkgs\nGzRVvRD9m2owIMFKy5ew9w0tq53prhU+Tn6LuSxCmW/nN6AiWs0snvwdjz2FvDEf\nxOxaDyb0PBXV6itP94zlL8w8JaP98GZX7pISuFcG3bO8IL2HN5PICsR3PWnlY3kh\nSmaOdu+fKOEOJndvVwfT+Da+6y9j7yELIVKnJNfCAQKBgQDzt5qbUBaiD7r6KFJi\nmOPtKm62P/f87IN4kvN6a84r5PXTZJtfNkIiee+n1rgWUsBRB7FQcNSErYmNXx4Q\nlC+rUgY+WXxoOBdo71wJ56lZocoIV8UBmEcd1QnKEY2mKJGXuKn6KOofr0+3lwZu\nRw916OPDQnj6pjrFRHhLQmt99wKBgQDFI/A34aueZtsrsUTE+HhNPNbNQWjRUVlt\nJCok2MF29VGGzcCTLobwXPdBlKJZ2vTGN4eKw93Kj75WWyO5IErXr/sYu9jrhyYB\nK/wrAdCfUsj/jbckFSqBONd+Nj8K/I34igfBNCQXGV7qQdxxcvN4YYd5qhii10FB\nfTuWOSh5YQKBgQDjm4PLKreIcHJpb8DJDgpHEsrEb+dUkTmTIII8wXORcMnXu2yT\nNeP7uK8FqzTOvEeZJTsGaek/Y6ZDniJAz3PZZsgn8ICMAF50hJ4LLgvthnhc5EM7\nYxB/ntb+nPgRxm96J16vHwjPwHUNewDpennI30/eqjS7uQTH+FLzzjr/LwKBgGL4\nAM+9DlBOaLdNni2YY6S650dSEBINWeyt3C51VuKmk5AuWQBKulmPAl49BShBAONF\n21jxrbXUZgSqaou0x33yjgdDvsm3JoAuGcFpfteNUvTgq1GFArqu05g8GXglhAyD\nFxOKXpfuF7VY7RdTUyFbLQ0KNKYDlHIRMcnf1g7hAoGAdJdW5PVncMfNK1NHzsCA\n2lgF9hQUKMlvayMfVL+Lf2x8C9pHSqB9dOFNYRcZWuLGb/dilUQVWHuDag0HK7N6\nFjPsrEtZfZFYHmGTdEG6VAiErzYfh+dcYPTTWHwEEEfgDi3q3fzhmm3MekaNEoCm\nYFYacr3LHtymMRc6mbH7HEc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "uploaderbot@elegant-theorem-451308-i5.iam.gserviceaccount.com",
+  "client_id": "107389154824049523527",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/uploaderbot%40elegant-theorem-451308-i5.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "authentication": "none",
+    "requestMethod": "POST",
+    "url": "http://127.0.0.1:7860/sdapi/v1/txt2img",
+    "responseFormat": "json",
+    "jsonParameters": true,
+    "options": {
+      "sendBodyAs": "json"
+    },
+    "bodyParametersJson": "{
+      \"prompt\": \"{{ $json[\\\"set prompt\\\"] }}\",
+      \"steps\": 20,
+      \"width\": 512,
+      \"height\": 512,
+      \"cfg_scale\": 7,
+      \"sampler_index\": \"Euler\"
+    }",
+    "headerParametersJson": "{\n  \"Content-Type\": \"application/json\"\n}"
+  },
+  "name": "Stable Diffusion Local",
+  "type": "n8n-nodes-base.httpRequest",
+  "typeVersion": 4,
+  "position": [
+    800,
+    300
+  ]
+}
