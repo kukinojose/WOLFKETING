@@ -245,10 +245,15 @@
     }
   });
 
-  // Código del botón "He completado el formulario" eliminado
-
+  // Redirigir botón "QUIERO HACER WOLFKETING" con parámetro ref si existe
   moreInfoBtn.addEventListener('click', () => {
-    window.location.href = 'mas-informacion.html';
+    const urlParams = new URLSearchParams(window.location.search);
+    const ref = urlParams.get('ref');
+    let targetUrl = 'mas-informacion.html';
+    if (ref) {
+      targetUrl += `?ref=${encodeURIComponent(ref)}`;
+    }
+    window.location.href = targetUrl;
   });
 </script>
 
